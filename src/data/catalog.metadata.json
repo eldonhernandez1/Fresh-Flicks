@@ -1,0 +1,540 @@
+{
+  "assetSpec": {
+    "poster": {
+      "format": "webp",
+      "width": 600,
+      "height": 900,
+      "directory": "/posters"
+    },
+    "backdrop": {
+      "format": "webp",
+      "width": 1280,
+      "height": 720,
+      "directory": "/backdrops"
+    },
+    "video": {
+      "format": "mp4",
+      "width": 640,
+      "height": 360,
+      "durationSeconds": 4,
+      "path": "/videos/preview.mp4"
+    }
+  },
+  "commonArtDirection": "Fictional streaming-series artwork. No real actors. No copyrighted characters. No studio logos. No platform branding. Cinematic premium TV style. High production value. Clean composition with room for UI overlays.",
+  "series": [
+    {
+      "id": "night-signal",
+      "title": "Night Signal",
+      "tagline": "The future is calling after midnight.",
+      "genres": [
+        "Sci-Fi",
+        "Mystery",
+        "Thriller"
+      ],
+      "year": 2026,
+      "seasons": 2,
+      "rating": "TV-14",
+      "match": 97,
+      "description": "A late-night radio host begins receiving calls that appear to predict disasters before they happen.",
+      "cast": [
+        "Mara Vale",
+        "Jon Bell",
+        "Sofia Chen"
+      ],
+      "creator": "Elian Cross",
+      "posterPath": "/posters/night-signal.webp",
+      "backdropPath": "/backdrops/night-signal.webp",
+      "videoPath": "/videos/preview.mp4",
+      "posterPrompt": "Vertical cinematic streaming poster for a fictional sci-fi mystery series titled Night Signal. A lone radio tower at night, glowing red aircraft lights, storm clouds, eerie blue broadcast waves, premium thriller mood, no real actors, no logos.",
+      "backdropPrompt": "Widescreen cinematic still for Night Signal. Remote radio station at midnight under storm clouds, subtle glowing signal lines in the sky, moody blue and red lighting, no text, no logos."
+    },
+    {
+      "id": "the-last-orchard",
+      "title": "The Last Orchard",
+      "tagline": "Every family tree has roots in the dark.",
+      "genres": [
+        "Drama",
+        "Mystery"
+      ],
+      "year": 2024,
+      "seasons": 3,
+      "rating": "TV-14",
+      "match": 92,
+      "description": "When three siblings inherit their family's failing orchard, they uncover a decades-old disappearance buried in the land.",
+      "cast": [
+        "Nora Hayes",
+        "Caleb Voss",
+        "Iris Monroe"
+      ],
+      "creator": "June Alder",
+      "posterPath": "/posters/the-last-orchard.webp",
+      "backdropPath": "/backdrops/the-last-orchard.webp",
+      "videoPath": "/videos/preview.mp4",
+      "posterPrompt": "Vertical prestige drama poster for The Last Orchard. Foggy apple orchard at dawn, abandoned farmhouse, three distant silhouettes, autumn colors, quiet mystery, cinematic natural light, no logos.",
+      "backdropPrompt": "Widescreen cinematic backdrop for The Last Orchard. Mist-covered orchard rows leading to an old farmhouse, warm sunrise cutting through fog, emotional drama atmosphere, no text."
+    },
+    {
+      "id": "glass-harbor",
+      "title": "Glass Harbor",
+      "tagline": "A perfect town. A fractured truth.",
+      "genres": [
+        "Crime",
+        "Drama",
+        "Mystery"
+      ],
+      "year": 2025,
+      "seasons": 1,
+      "rating": "TV-MA",
+      "match": 94,
+      "description": "A detective returns to her wealthy coastal hometown after a tech founder vanishes from his cliffside estate.",
+      "cast": [
+        "Elena Ro",
+        "Marcus Halen",
+        "Vera Quinn"
+      ],
+      "creator": "Tessa Ward",
+      "posterPath": "/posters/glass-harbor.webp",
+      "backdropPath": "/backdrops/glass-harbor.webp",
+      "videoPath": "/videos/preview.mp4",
+      "posterPrompt": "Vertical crime drama poster for Glass Harbor. Elegant glass mansion on a coastal cliff, dark ocean below, fractured reflection effect, cold luxury thriller look, no real brands, no logos.",
+      "backdropPrompt": "Widescreen cinematic still for Glass Harbor. Modern glass house overlooking a stormy harbor, police lights faintly reflected in windows, sophisticated coastal noir mood, no text."
+    },
+    {
+      "id": "orbit-house",
+      "title": "Orbit House",
+      "tagline": "Roommates. Rent. Zero gravity.",
+      "genres": [
+        "Sci-Fi",
+        "Comedy"
+      ],
+      "year": 2026,
+      "seasons": 2,
+      "rating": "TV-PG",
+      "match": 89,
+      "description": "Four broke astronauts share a malfunctioning orbital rental while trying to survive space, work, and each other.",
+      "cast": [
+        "Pax Rivera",
+        "Mina Sol",
+        "Theo Grant"
+      ],
+      "creator": "Rafi Bell",
+      "posterPath": "/posters/orbit-house.webp",
+      "backdropPath": "/backdrops/orbit-house.webp",
+      "videoPath": "/videos/preview.mp4",
+      "posterPrompt": "Vertical sci-fi comedy poster for Orbit House. Cozy messy apartment floating inside a space station, socks and cereal drifting in zero gravity, Earth visible through window, bright playful cinematic style, no logos.",
+      "backdropPrompt": "Widescreen backdrop for Orbit House. Interior of a cluttered orbital apartment with Earth outside the window, objects floating, warm sitcom energy with polished sci-fi production design, no text."
+    },
+    {
+      "id": "dead-letter-office",
+      "title": "Dead Letter Office",
+      "tagline": "Some messages refuse to stay lost.",
+      "genres": [
+        "Supernatural",
+        "Mystery",
+        "Drama"
+      ],
+      "year": 2023,
+      "seasons": 2,
+      "rating": "TV-14",
+      "match": 95,
+      "description": "Postal workers in an abandoned mail facility discover letters from people who have not died yet.",
+      "cast": [
+        "Anika Shaw",
+        "Peter Vale",
+        "Lucien Park"
+      ],
+      "creator": "Marta Ell",
+      "posterPath": "/posters/dead-letter-office.webp",
+      "backdropPath": "/backdrops/dead-letter-office.webp",
+      "videoPath": "/videos/preview.mp4",
+      "posterPrompt": "Vertical supernatural mystery poster for Dead Letter Office. Endless shelves of old letters, dust in golden light, one envelope glowing faintly, eerie bureaucratic atmosphere, no logos.",
+      "backdropPrompt": "Widescreen cinematic still for Dead Letter Office. Vast abandoned postal sorting room filled with letters and shadows, one desk lamp illuminating a mysterious envelope, no text."
+    },
+    {
+      "id": "crownfall",
+      "title": "Crownfall",
+      "tagline": "The throne was only the beginning.",
+      "genres": [
+        "Fantasy",
+        "Political",
+        "Drama"
+      ],
+      "year": 2025,
+      "seasons": 4,
+      "rating": "TV-MA",
+      "match": 91,
+      "description": "After a young queen is crowned during a civil war, rival houses discover the kingdom's oldest myth may be real.",
+      "cast": [
+        "Amara Venn",
+        "Silas Rhone",
+        "Kei Davor"
+      ],
+      "creator": "Rowan Pierce",
+      "posterPath": "/posters/crownfall.webp",
+      "backdropPath": "/backdrops/crownfall.webp",
+      "videoPath": "/videos/preview.mp4",
+      "posterPrompt": "Vertical epic fantasy poster for Crownfall. Cracked golden crown on a stone floor, battlefield smoke behind palace gates, regal but dangerous mood, cinematic detail, no logos.",
+      "backdropPrompt": "Widescreen epic fantasy backdrop for Crownfall. Burning palace courtyard after a battle, banners torn, dramatic sky, royal intrigue atmosphere, no text."
+    },
+    {
+      "id": "static-valley",
+      "title": "Static Valley",
+      "tagline": "Nothing changes here. That's the problem.",
+      "genres": [
+        "Sci-Fi",
+        "Horror",
+        "Mystery"
+      ],
+      "year": 2024,
+      "seasons": 1,
+      "rating": "TV-14",
+      "match": 93,
+      "description": "A desert town trapped in a repeating broadcast day begins to fracture when a teenager hears silence for the first time.",
+      "cast": [
+        "Lena Brooks",
+        "Owen Kade",
+        "Priya Nair"
+      ],
+      "creator": "Dane Marr",
+      "posterPath": "/posters/static-valley.webp",
+      "backdropPath": "/backdrops/static-valley.webp",
+      "videoPath": "/videos/preview.mp4",
+      "posterPrompt": "Vertical eerie sci-fi horror poster for Static Valley. Desert town under harsh sun, analog TV static filling the sky, empty road, unsettling retro atmosphere, no logos.",
+      "backdropPrompt": "Widescreen cinematic still for Static Valley. Empty desert main street with old televisions in storefronts showing static, shimmering heat haze, surreal quiet horror, no text."
+    },
+    {
+      "id": "the-marlowe-files",
+      "title": "The Marlowe Files",
+      "tagline": "Every case has a second shadow.",
+      "genres": [
+        "Detective",
+        "Noir",
+        "Crime"
+      ],
+      "year": 2022,
+      "seasons": 3,
+      "rating": "TV-14",
+      "match": 88,
+      "description": "A private investigator in a rain-soaked city solves impossible cases left behind by her missing mentor.",
+      "cast": [
+        "Vivian Lake",
+        "Noel Archer",
+        "Camden Frost"
+      ],
+      "creator": "Ivy Sloane",
+      "posterPath": "/posters/the-marlowe-files.webp",
+      "backdropPath": "/backdrops/the-marlowe-files.webp",
+      "videoPath": "/videos/preview.mp4",
+      "posterPrompt": "Vertical noir detective poster for The Marlowe Files. Rainy alley, detective silhouette in trench coat, neon reflections, paper case files blowing in wind, stylish modern noir, no logos.",
+      "backdropPrompt": "Widescreen noir backdrop for The Marlowe Files. Rain-covered city street at night, neon signs reflected on pavement, detective office window glowing above, no text."
+    },
+    {
+      "id": "after-the-sirens",
+      "title": "After the Sirens",
+      "tagline": "The disaster ended. The hard part didn't.",
+      "genres": [
+        "Drama",
+        "Survival"
+      ],
+      "year": 2026,
+      "seasons": 1,
+      "rating": "TV-MA",
+      "match": 90,
+      "description": "In the months after a coastal evacuation, strangers rebuild a temporary city while hiding what they lost.",
+      "cast": [
+        "Mateo Cruz",
+        "Jules Harper",
+        "Samira Cole"
+      ],
+      "creator": "Leah Wynn",
+      "posterPath": "/posters/after-the-sirens.webp",
+      "backdropPath": "/backdrops/after-the-sirens.webp",
+      "videoPath": "/videos/preview.mp4",
+      "posterPrompt": "Vertical emotional survival drama poster for After the Sirens. Flooded street at sunset, emergency siren pole in silhouette, people walking through shallow water, grounded human drama, no logos.",
+      "backdropPrompt": "Widescreen cinematic still for After the Sirens. Temporary relief camp near a damaged coastline, warm sunset, quiet resilience, realistic dramatic tone, no text."
+    },
+    {
+      "id": "neon-parish",
+      "title": "Neon Parish",
+      "tagline": "Confession is only the first crime.",
+      "genres": [
+        "Crime",
+        "Thriller",
+        "Noir"
+      ],
+      "year": 2025,
+      "seasons": 2,
+      "rating": "TV-MA",
+      "match": 96,
+      "description": "A nightclub owner and a disgraced priest become unlikely partners in a city where every secret has a price.",
+      "cast": [
+        "Rhea Saint",
+        "Dominic Vale",
+        "Cass Knox"
+      ],
+      "creator": "Malik Stone",
+      "posterPath": "/posters/neon-parish.webp",
+      "backdropPath": "/backdrops/neon-parish.webp",
+      "videoPath": "/videos/preview.mp4",
+      "posterPrompt": "Vertical neon crime thriller poster for Neon Parish. Church stained glass mixed with nightclub neon, shadowy figures, red and electric blue city glow, stylish crime noir, no real logos.",
+      "backdropPrompt": "Widescreen cinematic backdrop for Neon Parish. Neon-lit street outside an old church near a nightclub district, wet pavement, smoky atmosphere, no text."
+    },
+    {
+      "id": "the-ninth-door",
+      "title": "The Ninth Door",
+      "tagline": "Eight opened. One should have stayed shut.",
+      "genres": [
+        "Fantasy",
+        "Horror",
+        "Mystery"
+      ],
+      "year": 2023,
+      "seasons": 2,
+      "rating": "TV-14",
+      "match": 87,
+      "description": "A museum archivist discovers a hidden door that appears only when someone nearby tells a lie.",
+      "cast": [
+        "Clara Voss",
+        "Henry Imai",
+        "Nadia Finch"
+      ],
+      "creator": "Eli Mercer",
+      "posterPath": "/posters/the-ninth-door.webp",
+      "backdropPath": "/backdrops/the-ninth-door.webp",
+      "videoPath": "/videos/preview.mp4",
+      "posterPrompt": "Vertical dark fantasy mystery poster for The Ninth Door. Ancient ornate door in a museum basement, golden symbols glowing in cracks, archival boxes, eerie elegant atmosphere, no logos.",
+      "backdropPrompt": "Widescreen backdrop for The Ninth Door. Museum storage room with covered artifacts, a mysterious illuminated door at the far end, cinematic shadows, no text."
+    },
+    {
+      "id": "blue-hour-motel",
+      "title": "Blue Hour Motel",
+      "tagline": "Everyone checks in before they change.",
+      "genres": [
+        "Drama",
+        "Romance",
+        "Anthology"
+      ],
+      "year": 2024,
+      "seasons": 2,
+      "rating": "TV-14",
+      "match": 85,
+      "description": "Each episode follows a different guest at a roadside motel during the hour before sunrise.",
+      "cast": [
+        "Mae Lin",
+        "Arthur Penn",
+        "Selah James"
+      ],
+      "creator": "Camille Rowe",
+      "posterPath": "/posters/blue-hour-motel.webp",
+      "backdropPath": "/backdrops/blue-hour-motel.webp",
+      "videoPath": "/videos/preview.mp4",
+      "posterPrompt": "Vertical anthology drama poster for Blue Hour Motel. Vintage roadside motel sign glowing in pre-dawn blue light, open room doors, quiet emotional mood, no logos.",
+      "backdropPrompt": "Widescreen cinematic still for Blue Hour Motel. Long motel walkway at dawn, blue sky before sunrise, warm light spilling from one room, intimate drama tone, no text."
+    },
+    {
+      "id": "ash-and-meridian",
+      "title": "Ash & Meridian",
+      "tagline": "Magic has a border. They crossed it.",
+      "genres": [
+        "Fantasy",
+        "Adventure",
+        "Drama"
+      ],
+      "year": 2026,
+      "seasons": 1,
+      "rating": "TV-PG",
+      "match": 89,
+      "description": "Two mapmakers chart a forbidden continent where geography changes according to memory.",
+      "cast": [
+        "Talia Wren",
+        "Ezra Pike",
+        "Mina Hart"
+      ],
+      "creator": "Jonas Reed",
+      "posterPath": "/posters/ash-and-meridian.webp",
+      "backdropPath": "/backdrops/ash-and-meridian.webp",
+      "videoPath": "/videos/preview.mp4",
+      "posterPrompt": "Vertical fantasy adventure poster for Ash & Meridian. Ancient map turning into a real mountain landscape, two travelers with lanterns, glowing compass, adventurous cinematic wonder, no logos.",
+      "backdropPrompt": "Widescreen fantasy backdrop for Ash & Meridian. Vast magical landscape with shifting mountains and rivers, explorers on a ridge studying a glowing map, no text."
+    },
+    {
+      "id": "the-soft-collapse",
+      "title": "The Soft Collapse",
+      "tagline": "The world ended quietly.",
+      "genres": [
+        "Sci-Fi",
+        "Drama",
+        "Dystopian"
+      ],
+      "year": 2025,
+      "seasons": 1,
+      "rating": "TV-MA",
+      "match": 91,
+      "description": "In a near future where technology slowly stops working, a family crosses a city that refuses to admit civilization is failing.",
+      "cast": [
+        "Imani West",
+        "Graham Holt",
+        "Nico Vale"
+      ],
+      "creator": "Seren Moss",
+      "posterPath": "/posters/the-soft-collapse.webp",
+      "backdropPath": "/backdrops/the-soft-collapse.webp",
+      "videoPath": "/videos/preview.mp4",
+      "posterPrompt": "Vertical dystopian sci-fi drama poster for The Soft Collapse. Modern city skyline with lights going dark block by block, family silhouettes on rooftop, quiet apocalyptic mood, no logos.",
+      "backdropPrompt": "Widescreen cinematic still for The Soft Collapse. Urban apartment towers at dusk, partial blackout spreading across the city, grounded near-future atmosphere, no text."
+    },
+    {
+      "id": "northbridge",
+      "title": "Northbridge",
+      "tagline": "Small town. Long winter. No easy exits.",
+      "genres": [
+        "Drama",
+        "Mystery"
+      ],
+      "year": 2022,
+      "seasons": 4,
+      "rating": "TV-14",
+      "match": 86,
+      "description": "A snowbound border town is forced to confront old loyalties when a new highway threatens to erase it.",
+      "cast": [
+        "Hannah Reed",
+        "Omar Lane",
+        "Beth Calder"
+      ],
+      "creator": "Milo Grant",
+      "posterPath": "/posters/northbridge.webp",
+      "backdropPath": "/backdrops/northbridge.webp",
+      "videoPath": "/videos/preview.mp4",
+      "posterPrompt": "Vertical small-town drama poster for Northbridge. Snowy bridge entering a remote town, warm lights in windows, overcast winter sky, restrained prestige drama style, no logos.",
+      "backdropPrompt": "Widescreen cinematic backdrop for Northbridge. Snow-covered main street near a frozen river bridge, quiet winter atmosphere, human drama tone, no text."
+    },
+    {
+      "id": "signal-fires",
+      "title": "Signal Fires",
+      "tagline": "Some friendships burn back to life.",
+      "genres": [
+        "Drama",
+        "Coming-of-Age"
+      ],
+      "year": 2023,
+      "seasons": 2,
+      "rating": "TV-14",
+      "match": 84,
+      "description": "Ten years after a summer camp accident, former friends reunite when anonymous messages lead them back to the lake.",
+      "cast": [
+        "Ari Cole",
+        "Miles Penn",
+        "Tessa Moon"
+      ],
+      "creator": "Kira Bell",
+      "posterPath": "/posters/signal-fires.webp",
+      "backdropPath": "/backdrops/signal-fires.webp",
+      "videoPath": "/videos/preview.mp4",
+      "posterPrompt": "Vertical coming-of-age mystery drama poster for Signal Fires. Lakeside campfire at twilight, empty dock, distant silhouettes, nostalgic but tense mood, no logos.",
+      "backdropPrompt": "Widescreen cinematic still for Signal Fires. Quiet summer lake at dusk with a small campfire near the shore, emotional mystery atmosphere, no text."
+    },
+    {
+      "id": "the-understudy",
+      "title": "The Understudy",
+      "tagline": "Opening night is murder.",
+      "genres": [
+        "Thriller",
+        "Drama",
+        "Mystery"
+      ],
+      "year": 2024,
+      "seasons": 1,
+      "rating": "TV-14",
+      "match": 88,
+      "description": "An unknown actor gets her big break after a theater star disappears hours before opening night.",
+      "cast": [
+        "Violet Ames",
+        "Nina Cross",
+        "Julian Park"
+      ],
+      "creator": "Marin Shaw",
+      "posterPath": "/posters/the-understudy.webp",
+      "backdropPath": "/backdrops/the-understudy.webp",
+      "videoPath": "/videos/preview.mp4",
+      "posterPrompt": "Vertical theater thriller poster for The Understudy. Empty stage under a single spotlight, red curtain partly open, fallen script pages, glamorous suspense mood, no logos.",
+      "backdropPrompt": "Widescreen cinematic backdrop for The Understudy. Ornate theater stage from the wings, spotlight on empty mark, red velvet curtains, backstage shadows, no text."
+    },
+    {
+      "id": "low-tide-city",
+      "title": "Low Tide City",
+      "tagline": "When the water leaves, the bodies return.",
+      "genres": [
+        "Crime",
+        "Mystery",
+        "Thriller"
+      ],
+      "year": 2026,
+      "seasons": 2,
+      "rating": "TV-MA",
+      "match": 95,
+      "description": "A harbor detective investigates crimes revealed only during rare extreme low tides.",
+      "cast": [
+        "Damon Pierce",
+        "Leah Quinn",
+        "Oscar Vale"
+      ],
+      "creator": "Noah Flint",
+      "posterPath": "/posters/low-tide-city.webp",
+      "backdropPath": "/backdrops/low-tide-city.webp",
+      "videoPath": "/videos/preview.mp4",
+      "posterPrompt": "Vertical coastal crime thriller poster for Low Tide City. Muddy harbor at extreme low tide, abandoned boat, city skyline behind, ominous discovery atmosphere, no logos.",
+      "backdropPrompt": "Widescreen cinematic still for Low Tide City. Exposed harbor floor at dawn, stranded boats, detectives near the waterline, moody coastal crime tone, no text."
+    },
+    {
+      "id": "archive-77",
+      "title": "Archive 77",
+      "tagline": "The footage remembers more than it recorded.",
+      "genres": [
+        "Horror",
+        "Mystery",
+        "Found Footage"
+      ],
+      "year": 2025,
+      "seasons": 1,
+      "rating": "TV-MA",
+      "match": 90,
+      "description": "A restoration team digitizing old public-access tapes discovers a missing episode that changes every time it is played.",
+      "cast": [
+        "Juno Hale",
+        "Eric Moss",
+        "Priya Stone"
+      ],
+      "creator": "Cassian Grey",
+      "posterPath": "/posters/archive-77.webp",
+      "backdropPath": "/backdrops/archive-77.webp",
+      "videoPath": "/videos/preview.mp4",
+      "posterPrompt": "Vertical analog horror poster for Archive 77. Stack of VHS tapes, one labeled 77 glowing faintly, dark editing room, scanline texture, eerie archival mood, no logos.",
+      "backdropPrompt": "Widescreen cinematic backdrop for Archive 77. Dim video restoration room with CRT monitors, VHS tapes, distorted image on screen, analog horror atmosphere, no text."
+    },
+    {
+      "id": "golden-hour",
+      "title": "Golden Hour",
+      "tagline": "One hospital. Sixty minutes. Everything changes.",
+      "genres": [
+        "Medical",
+        "Drama"
+      ],
+      "year": 2023,
+      "seasons": 3,
+      "rating": "TV-14",
+      "match": 87,
+      "description": "Doctors, nurses, and patients collide during the most critical hour of emergency care.",
+      "cast": [
+        "Maya Lennox",
+        "Cole Everett",
+        "Rina Shah"
+      ],
+      "creator": "Alana Price",
+      "posterPath": "/posters/golden-hour.webp",
+      "backdropPath": "/backdrops/golden-hour.webp",
+      "videoPath": "/videos/preview.mp4",
+      "posterPrompt": "Vertical medical drama poster for Golden Hour. Hospital emergency entrance glowing at sunset, medical team silhouettes moving with urgency, warm cinematic light, no logos.",
+      "backdropPrompt": "Widescreen cinematic still for Golden Hour. Busy emergency department corridor during sunset light, doctors in motion, emotional high-stakes medical drama, no text."
+    }
+  ]
+}
