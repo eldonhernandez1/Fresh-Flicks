@@ -6,6 +6,18 @@ export function Nav() {
   const [query, setQuery] = useState("");
   const [open, setOpen] = useState(false);
   const shellRef = useRef<HTMLDivElement>(null);
+  const [theme, setTheme] = useState<"dark" | "light">(
+    () => (localStorage.getItem("theme") as "dark" | "light") ?? "dark"
+  );
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
+  function toggleTheme() {
+    setTheme((t) => (t === "dark" ? "light" : "dark"));
+  }
 
   const results = query.trim()
     ? seriesCatalog
@@ -60,6 +72,14 @@ export function Nav() {
         <a href="#/">New</a>
         <a href="#/">My List</a>
       </nav>
+
+      <button
+        className="theme-toggle"
+        onClick={toggleTheme}
+        aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+      >
+        {theme === "dark" ? "☀" : "☽"}
+      </button>
 
       <div className="search-shell" ref={shellRef}>
         <label className="search-input-row" htmlFor="search-input">
