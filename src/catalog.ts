@@ -8,7 +8,7 @@ export function findSeries(id: string) {
 }
 
 export function getFeaturedSeries() {
-  return findSeries("night-signal") ?? seriesCatalog[0];
+  return findSeries("edge-of-the-wild") ?? seriesCatalog[0];
 }
 
 export function getGenres() {

@@ -49,15 +49,16 @@ export function Nav() {
 
   return (
     <header className="topbar">
-      <a className="brand" href="#/" aria-label="StreamKit home">
+      <a className="brand" href="#/" aria-label="Fresh Flicks home">
         <span className="brand-mark">S</span>
-        <span>StreamKit</span>
+        <span>Fresh Flicks</span>
       </a>
 
       <nav className="nav-links" aria-label="Primary navigation">
         <a href="#/">Home</a>
         <a href="#/">Series</a>
         <a href="#/">New</a>
+        <a href="#/">My List</a>
       </nav>
 
       <div className="search-shell" ref={shellRef}>
