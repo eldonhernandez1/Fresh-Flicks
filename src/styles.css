@@ -65,7 +65,7 @@ video {
   left: 0;
   right: 0;
   display: grid;
-  grid-template-columns: auto 1fr minmax(10rem, 20rem) auto;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 1.5rem;
   min-height: 4.5rem;
@@ -110,10 +110,17 @@ video {
   color: var(--text);
 }
 
-.search-shell {
+.search-area {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
   justify-self: end;
+  min-width: 0;
+}
+
+.search-shell {
   position: relative;
-  width: 100%;
+  width: clamp(10rem, 18vw, 20rem);
   min-width: 0;
 }
 
@@ -671,8 +678,8 @@ h2 {
     display: none;
   }
 
-  .search-shell {
-    justify-self: stretch;
+  .search-area {
+    grid-column: 1;
   }
 
   .hero,
@@ -776,10 +783,13 @@ h2 {
 }
 
 @media (max-width: 860px) {
-  .theme-toggle {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
+  .search-area {
+    justify-self: stretch;
+  }
+
+  .search-shell {
+    flex: 1;
+    width: auto;
   }
 }
 

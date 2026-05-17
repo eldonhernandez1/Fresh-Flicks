@@ -73,51 +73,53 @@ export function Nav() {
         <a href="#/">My List</a>
       </nav>
 
-      <button
-        className="theme-toggle"
-        onClick={toggleTheme}
-        aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
-      >
-        {theme === "dark" ? "☀" : "☽"}
-      </button>
+      <div className="search-area">
+        <div className="search-shell" ref={shellRef}>
+          <label className="search-input-row" htmlFor="search-input">
+            <span className="search-shell__icon" aria-hidden="true" />
+            <input
+              id="search-input"
+              aria-label="Search titles"
+              aria-expanded={open && results.length > 0}
+              aria-haspopup="listbox"
+              placeholder="Search titles"
+              value={query}
+              onChange={handleChange}
+              onKeyDown={handleKeyDown}
+              autoComplete="off"
+            />
+          </label>
 
-      <div className="search-shell" ref={shellRef}>
-        <label className="search-input-row" htmlFor="search-input">
-          <span className="search-shell__icon" aria-hidden="true" />
-          <input
-            id="search-input"
-            aria-label="Search titles"
-            aria-expanded={open && results.length > 0}
-            aria-haspopup="listbox"
-            placeholder="Search titles"
-            value={query}
-            onChange={handleChange}
-            onKeyDown={handleKeyDown}
-            autoComplete="off"
-          />
-        </label>
+          {open && results.length > 0 && (
+            <ul className="search-dropdown" role="listbox" aria-label="Search results">
+              {results.map((s) => (
+                <li key={s.id} role="option">
+                  <a
+                    className="search-result"
+                    href={showUrl(s.id)}
+                    onClick={handleResultClick}
+                  >
+                    <img src={s.posterPath} alt="" className="search-result__poster" />
+                    <div className="search-result__info">
+                      <span className="search-result__title">{s.title}</span>
+                      <span className="search-result__meta">
+                        {s.genres.join(" · ")} · {s.year}
+                      </span>
+                    </div>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
 
-        {open && results.length > 0 && (
-          <ul className="search-dropdown" role="listbox" aria-label="Search results">
-            {results.map((s) => (
-              <li key={s.id} role="option">
-                <a
-                  className="search-result"
-                  href={showUrl(s.id)}
-                  onClick={handleResultClick}
-                >
-                  <img src={s.posterPath} alt="" className="search-result__poster" />
-                  <div className="search-result__info">
-                    <span className="search-result__title">{s.title}</span>
-                    <span className="search-result__meta">
-                      {s.genres.join(" · ")} · {s.year}
-                    </span>
-                  </div>
-                </a>
-              </li>
-            ))}
-          </ul>
-        )}
+        <button
+          className="theme-toggle"
+          onClick={toggleTheme}
+          aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+        >
+          {theme === "dark" ? "☀" : "☽"}
+        </button>
       </div>
     </header>
   );
