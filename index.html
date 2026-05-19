@@ -11,10 +11,12 @@
   </head>
   <body>
     <script>
-      document.documentElement.setAttribute(
-        'data-theme',
-        localStorage.getItem('theme') || 'dark'
-      );
+      try {
+        var t = localStorage.getItem('theme');
+        document.documentElement.setAttribute('data-theme', t === 'light' ? 'light' : 'dark');
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
     </script>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>

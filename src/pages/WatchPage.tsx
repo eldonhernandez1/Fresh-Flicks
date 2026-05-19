@@ -36,6 +36,7 @@ export function WatchPage({ id }: WatchPageProps) {
         <video
           src={series.videoPath}
           poster={series.backdropPath}
+          title={`${series.title} — preview`}
           controls
           playsInline
           loop

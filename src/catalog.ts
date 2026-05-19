@@ -1,14 +1,32 @@
-import catalog from "./data/catalog.json";
+import rawCatalog from "./data/catalog.json";
 import type { Series } from "./types";
 
-export const seriesCatalog = catalog as Series[];
+const REQUIRED_FIELDS: (keyof Series)[] = [
+  "id", "title", "tagline", "genres", "year", "seasons",
+  "rating", "match", "description", "cast", "creator",
+  "posterPath", "backdropPath", "videoPath",
+];
 
-export function findSeries(id: string) {
+function assertCatalog(data: unknown): Series[] {
+  if (!Array.isArray(data)) throw new Error("catalog.json must be an array");
+  for (const item of data as Record<string, unknown>[]) {
+    for (const key of REQUIRED_FIELDS) {
+      if (!(key in item)) throw new Error(`catalog.json entry missing field: ${key}`);
+    }
+  }
+  return data as Series[];
+}
+
+export const FEATURED_SERIES_ID = "edge-of-the-wild";
+
+export const seriesCatalog = assertCatalog(rawCatalog);
+
+export function findSeries(id: string): Series | undefined {
   return seriesCatalog.find((series) => series.id === id);
 }
 
-export function getFeaturedSeries() {
-  return findSeries("edge-of-the-wild") ?? seriesCatalog[0];
+export function getFeaturedSeries(): Series {
+  return findSeries(FEATURED_SERIES_ID) ?? seriesCatalog[0];
 }
 
 export function getGenres() {

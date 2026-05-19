@@ -2,17 +2,28 @@ import { useEffect, useRef, useState } from "react";
 import { seriesCatalog } from "../catalog";
 import { showUrl } from "../router";
 
+function safeLocalStorage(): Storage | null {
+  try {
+    return window.localStorage;
+  } catch {
+    return null;
+  }
+}
+
+function readTheme(): "dark" | "light" {
+  const stored = safeLocalStorage()?.getItem("theme");
+  return stored === "light" ? "light" : "dark";
+}
+
 export function Nav() {
   const [query, setQuery] = useState("");
   const [open, setOpen] = useState(false);
   const shellRef = useRef<HTMLDivElement>(null);
-  const [theme, setTheme] = useState<"dark" | "light">(
-    () => (localStorage.getItem("theme") as "dark" | "light") ?? "dark"
-  );
+  const [theme, setTheme] = useState<"dark" | "light">(readTheme);
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
-    localStorage.setItem("theme", theme);
+    safeLocalStorage()?.setItem("theme", theme);
   }, [theme]);
 
   function toggleTheme() {
@@ -82,6 +93,7 @@ export function Nav() {
               aria-label="Search titles"
               aria-expanded={open && results.length > 0}
               aria-haspopup="listbox"
+              aria-controls="search-listbox"
               placeholder="Search titles"
               value={query}
               onChange={handleChange}
@@ -91,9 +103,9 @@ export function Nav() {
           </label>
 
           {open && results.length > 0 && (
-            <ul className="search-dropdown" role="listbox" aria-label="Search results">
+            <ul id="search-listbox" className="search-dropdown" role="listbox" aria-label="Search results">
               {results.map((s) => (
-                <li key={s.id} role="option">
+                <li key={s.id} role="option" aria-selected={false}>
                   <a
                     className="search-result"
                     href={showUrl(s.id)}

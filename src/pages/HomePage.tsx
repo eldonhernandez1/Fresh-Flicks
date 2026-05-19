@@ -1,7 +1,6 @@
-import { getGenres, getSeriesByGenre } from "../catalog";
 import { MetaLine } from "../components/MetaLine";
 import { Row } from "../components/Row";
-import { watchUrl } from "../router";
+import { showUrl, watchUrl } from "../router";
 import type { Series } from "../types";
 
 type HomePageProps = {
@@ -10,7 +9,7 @@ type HomePageProps = {
 };
 
 export function HomePage({ featured, catalog }: HomePageProps) {
-  const genres = getGenres();
+  const genres = Array.from(new Set(catalog.flatMap((s) => s.genres))).sort();
   const highMatch = [...catalog].sort((a, b) => b.match - a.match).slice(0, 10);
   const newest = [...catalog].sort((a, b) => b.year - a.year).slice(0, 10);
 
@@ -29,7 +28,7 @@ export function HomePage({ featured, catalog }: HomePageProps) {
             <a className="button button--primary" href={watchUrl(featured.id)}>
               ▶ Play
             </a>
-            <a className="button button--ghost" href={`#/show/${featured.id}`}>
+            <a className="button button--ghost" href={showUrl(featured.id)}>
               More Info
             </a>
           </div>
@@ -40,7 +39,11 @@ export function HomePage({ featured, catalog }: HomePageProps) {
         <Row title="Top Matches" items={highMatch} />
         <Row title="New Releases" items={newest} variant="wide" />
         {genres.slice(0, 5).map((genre) => (
-          <Row key={genre} title={genre} items={getSeriesByGenre(genre)} />
+          <Row
+            key={genre}
+            title={genre}
+            items={catalog.filter((s) => s.genres.includes(genre))}
+          />
         ))}
       </div>
     </>

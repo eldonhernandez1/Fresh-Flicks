@@ -75,7 +75,7 @@ export function ShowPage({ id }: ShowPageProps) {
           </div>
           <div className="episode-list">
             {Array.from({ length: Math.min(series.seasons + 2, 5) }, (_, index) => (
-              <a key={index} className="episode" href={watchUrl(series.id)}>
+              <a key={`${series.id}-ep-${index + 1}`} className="episode" href={watchUrl(series.id)}>
                 <span className="episode__number">{index + 1}</span>
                 <span>
                   <strong>{episodeTitle(series.title, index)}</strong>
