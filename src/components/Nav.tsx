@@ -73,7 +73,7 @@ export function Nav() {
   return (
     <header className="topbar">
       <a className="brand" href="#/" aria-label="Fresh Flicks home">
-        <span className="brand-mark">S</span>
+        <span className="brand-mark">F</span>
         <span>Fresh Flicks</span>
       </a>
 

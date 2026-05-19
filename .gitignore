@@ -6,3 +6,5 @@ dist
 !package-lock.json
 *.tmp
 *~RF*.TMP
+
+.vercel
