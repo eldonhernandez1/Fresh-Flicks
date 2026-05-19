@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { seriesCatalog } from "../catalog";
-import { showUrl } from "../router";
+import { listUrl, showUrl } from "../router";
 
 function safeLocalStorage(): Storage | null {
   try {
@@ -81,7 +81,7 @@ export function Nav() {
         <a href="#/">Home</a>
         <a href="#/">Series</a>
         <a href="#/">New</a>
-        <a href="#/">My List</a>
+        <a href={listUrl()}>My List</a>
       </nav>
 
       <div className="search-area">

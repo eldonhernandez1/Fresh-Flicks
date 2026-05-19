@@ -19,5 +19,6 @@ export type Series = {
 
 export type Route =
   | { name: "home" }
+  | { name: "list" }
   | { name: "show"; id: string }
   | { name: "watch"; id: string };

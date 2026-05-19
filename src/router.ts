@@ -7,6 +7,10 @@ export function parseRoute(hash = window.location.hash): Route {
   const path = hash.replace(/^#/, "") || "/";
   const parts = path.split("/").filter(Boolean);
 
+  if (parts[0] === "list") {
+    return { name: "list" };
+  }
+
   if (parts[0] === "show" && parts[1] && VALID_ID.test(parts[1])) {
     return { name: "show", id: parts[1] };
   }
@@ -36,4 +40,8 @@ export function showUrl(id: string) {
 
 export function watchUrl(id: string) {
   return `#/watch/${id}`;
+}
+
+export function listUrl() {
+  return "#/list";
 }

@@ -5,9 +5,11 @@ import { watchUrl } from "../router";
 
 type ShowPageProps = {
   id: string;
+  ids: string[];
+  toggle: (id: string) => void;
 };
 
-export function ShowPage({ id }: ShowPageProps) {
+export function ShowPage({ id, ids, toggle }: ShowPageProps) {
   const series = findSeries(id);
 
   if (!series) {
@@ -22,6 +24,7 @@ export function ShowPage({ id }: ShowPageProps) {
   }
 
   const moreLikeThis = getMoreLikeThis(series);
+  const inList = ids.includes(series.id);
 
   return (
     <>
@@ -42,8 +45,12 @@ export function ShowPage({ id }: ShowPageProps) {
               <a className="button button--primary" href={watchUrl(series.id)}>
                 ▶ Play
               </a>
-              <button className="button button--ghost" type="button">
-                + My List
+              <button
+                className={`button button--ghost${inList ? " button--in-list" : ""}`}
+                type="button"
+                onClick={() => toggle(series.id)}
+              >
+                {inList ? "✓ In My List" : "+ My List"}
               </button>
             </div>
           </div>
