@@ -7,11 +7,23 @@ const REQUIRED_FIELDS: (keyof Series)[] = [
   "posterPath", "backdropPath", "videoPath",
 ];
 
+const VALID_PATH = /^\/[a-zA-Z0-9/_\-.]+\.(webp|mp4|jpg|png|svg)$/;
+const VALID_RATINGS = new Set<string>(["TV-PG", "TV-14", "TV-MA"]);
+
 function assertCatalog(data: unknown): Series[] {
   if (!Array.isArray(data)) throw new Error("catalog.json must be an array");
   for (const item of data as Record<string, unknown>[]) {
     for (const key of REQUIRED_FIELDS) {
       if (!(key in item)) throw new Error(`catalog.json entry missing field: ${key}`);
+    }
+    const s = item as Record<string, unknown>;
+    for (const pathField of ["posterPath", "backdropPath", "videoPath"] as const) {
+      if (typeof s[pathField] !== "string" || !VALID_PATH.test(s[pathField] as string)) {
+        throw new Error(`catalog.json entry has unsafe path for: ${pathField}`);
+      }
+    }
+    if (!VALID_RATINGS.has(s.rating as string)) {
+      throw new Error(`catalog.json entry has invalid rating: ${s.rating}`);
     }
   }
   return data as Series[];

@@ -1,15 +1,17 @@
 import { useEffect, useState } from "react";
 import type { Route } from "./types";
 
+const VALID_ID = /^[a-z0-9-]{1,80}$/;
+
 export function parseRoute(hash = window.location.hash): Route {
   const path = hash.replace(/^#/, "") || "/";
   const parts = path.split("/").filter(Boolean);
 
-  if (parts[0] === "show" && parts[1]) {
+  if (parts[0] === "show" && parts[1] && VALID_ID.test(parts[1])) {
     return { name: "show", id: parts[1] };
   }
 
-  if (parts[0] === "watch" && parts[1]) {
+  if (parts[0] === "watch" && parts[1] && VALID_ID.test(parts[1])) {
     return { name: "watch", id: parts[1] };
   }
 
